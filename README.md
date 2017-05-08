@@ -2,8 +2,8 @@
 
 [![Build Status](https://travis-ci.org/idchlife/nuclear-reactor.svg?branch=master)](https://travis-ci.org/idchlife/nuclear-reactor)
 
-Deal breaker for React/Preact state management. If you heard about Flux - nuclear-reactor is like next form of it.
-Simple, yet powerful.
+Deal breaker for React/Preact state management. If you heard about Flux - nuclear-reactor is simplified and yet
+powerful form of it.
 
 ## Installation
 
