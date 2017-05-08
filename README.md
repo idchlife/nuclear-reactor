@@ -106,7 +106,7 @@ class DateReactor {
 
 Also, notify function can be used even without argument!
 One condition, though: it should be called exactly inside reactor method. Not in some function outside, not in promise callback.
-And if you follow will this condition - it will do it's job. It will know where it was called and notify listeners
+And if you will follow this condition - it will do it's job. It will know where it was called and notify listeners
 of only reactor where it was used. Like this:
 
 ```typescript
@@ -158,7 +158,7 @@ First you specify Reactor, and then you specify or not it's properties. Multiple
 If you want to attach some outside listener for reactor, like custom
 service, or manager, you can extend your reactor class with StoreLikeReactor.
 StoreLikeReactor will add methods for adding and removing listeners.
-Be careful, it's your job to add and (!) remove listeners. Without removing them
+Be careful, it's your responsibility to add and (!) remove listeners. Without removing them
 in time you can easily provoke memory leak with many duplicate listeners!
 
 ```typescript
