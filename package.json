@@ -3,6 +3,7 @@
   "version": "0.4.11",
   "description": "-",
   "main": "./dist/index.js",
+  "repository": "https://github.com/idchlife/nuclear-reactor",
   "scripts": {
     "test": "mocha ./dist/tests/tests.js",
     "build": "tsc -p ./src -w --pretty"
