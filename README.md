@@ -11,6 +11,11 @@ Simple, yet powerful.
   npm i nuclear-reactor --save
 ```
 
+## Examples
+
+Examples of usage you can find in this repository
+https://github.com/idchlife/nuclear-reactor-examples
+
 ## Usage
 
 You will have reactors - basically singletons of classes. Like stores in flux (in terms of exporting default instance of class). And components. Which will listen to reactors or reactors properties.
