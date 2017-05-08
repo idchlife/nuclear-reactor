@@ -1,6 +1,10 @@
-import { registerReactorListener, unregisterReactorListener } from '../hub';
+import { registerReactor, registerReactorListener, unregisterReactorListener } from '../hub';
 
 export default class StoreLikeReactor {
+  constructor() {
+    registerReactor(this);
+  }
+
   public addChangeListener(c: Function) {
     registerReactorListener(this, c);
   }
