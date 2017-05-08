@@ -1,6 +1,6 @@
 {
   "name": "nuclear-reactor",
-  "version": "0.4.11",
+  "version": "0.4.12",
   "description": "-",
   "main": "./dist/index.js",
   "repository": "https://github.com/idchlife/nuclear-reactor",
