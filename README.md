@@ -153,6 +153,22 @@ As you can see, we can pass reactor without properties. It means that component'
 Basically arguments for @AwareOf look like this: @AwareOf(...args: Array<Reactor | string>)
 First you specify Reactor, and then you specify or not it's properties. Multiple reactors and multiple properties can be passed. Your component can listen to numerous reactors and their properties! And all of them will populate components state.
 
+## Usage without decorators
+
+Of course you can use this library without TypeScript and decorators.
+If you're comfortable with your favorite babel-react stack, you can use AwareOf like this:
+https://github.com/idchlife/nuclear-reactor-examples/blob/master/todo-js-react/components/TodoApp.js#L16
+
+notify function for properties change awareness can be used without decorators like this
+
+```typescript
+// your reactor constructor
+constructor() {
+  notify(this, "price");
+  notify(this, "product");
+}
+```
+
 
 ## Contributing
 
