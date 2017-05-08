@@ -99,7 +99,19 @@ describe("Testing reactors work with and without decorators", function() {
     assert.equal(lastComponentAState["weight"], 333);
   });
 
-  // it("should notify that arra")
+  it("should successfully add listener function to StoreLikeReactor and call it on change", () => {
+    let calledListener = false;
+
+    FleebReactor.addChangeListener(function() {
+      console.log("Called custom listener");
+
+      calledListener = true;
+    });
+
+    FleebReactor.hizards++;
+
+    assert.isTrue(calledListener);
+  })
 });
 
 // assert.equal(lastComponentAState.price, 301);

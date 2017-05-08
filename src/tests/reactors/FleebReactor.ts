@@ -1,5 +1,6 @@
+import StoreLikeReactor from '../../reactors/StoreLikeReactor';
 import { notify } from '../..';
-export class FleebReactor {
+export class FleebReactor extends StoreLikeReactor {
   @notify
   hizards: number = 12345;
 
