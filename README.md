@@ -146,5 +146,24 @@ As you can see, we can pass reactor without properties. It means that component'
 Basically arguments for @AwareOf look like this: @AwareOf(...args: Array<Reactor | string>)
 First you specify Reactor, and then you specify or not it's properties. Multiple reactors and multiple properties can be passed. Your component can listen to numerous reactors and their properties! And all of them will populate components state.
 
+
+## Contributing
+
+1. Fork it ( https://github.com/idchlife/nuclear-reactor/fork )
+2. Create your feature branch (git checkout -b my-new-feature)
+3. Commit your changes (git commit -am 'Add some feature')
+4. Push to the branch (git push origin my-new-feature)
+5. Create a new Pull Request
+
+## Contributors
+
+- [idchlife](https://github.com/idchlife) idchlife - creator, maintainer
+
+# LICENSE
+
+MIT
+
+
+
 Here is a nice picture of Cherenkov radiation:
 ![image](https://cloud.githubusercontent.com/assets/4563032/25785540/1b9ff1be-338c-11e7-9f60-87a764fdf7a1.png)
