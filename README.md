@@ -153,6 +153,34 @@ As you can see, we can pass reactor without properties. It means that component'
 Basically arguments for @AwareOf look like this: @AwareOf(...args: Array<Reactor | string>)
 First you specify Reactor, and then you specify or not it's properties. Multiple reactors and multiple properties can be passed. Your component can listen to numerous reactors and their properties! And all of them will populate components state.
 
+## Listening to reactor without component
+
+If you want to attach some outside listener for reactor, like custom
+service, or manager, you can extend your reactor class with StoreLikeReactor.
+StoreLikeReactor will add methods for adding and removing listeners.
+Be careful, it's your job to add and (!) remove listeners. Without removing them
+in time you can easily provoke memory leak with many duplicate listeners!
+
+```typescript
+import { StoreLikeReactor } from "nuclear-reactor";
+
+class YourReactor extends StoreLikeReactor {
+
+}
+
+export default new YourReactor();
+```
+
+```typescript
+import YourReactor from "./reactors/YourReactor";
+
+function yourListener() {
+  console.log("Whelp reactor changed");
+}
+reactor.addChangeListener(yourListener);
+reactor.removeChangeListener(yourListener);
+```
+
 ## Usage without decorators
 
 Of course you can use this library without TypeScript and decorators.
